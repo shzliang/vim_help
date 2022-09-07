@@ -1,0 +1,26 @@
+" verilog snippets
+
+" let vimrc take effect immediately
+inoremap ( ()<Left>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap " ""<Left>
+
+iabbrev begin begin<cr><cr>end<up><BS>
+iabbrev module module ;<cr><cr>endmodule<up><BS>
+iabbrev function function ;<cr><cr>endfunction<up><BS>
+iabbrev task task ;<cr><cr>endtask<up><BS>
+iabbrev case case<cr><cr>endcase<up><BS>
+
+iabbrev module module MNAME(<cr><cr><right>;<cr><cr>endmodule<esc>/MNAME<cr>
+iabbrev always_pos always @(posedge _CLK or negedge rst_n<right> begin<cr><cr>end<esc>?_CLK<cr>
+
+hi verilogConstant guifg=Blue ctermfg=DarkBlue
+hi verilogLabel guifg=Blue ctermfg=DarkBlue
+hi verilogConditional guifg=Magenta ctermfg=Magenta
+hi verilogOperator guifg=Yellow ctermfg=Yellow
+hi verilogComment guifg=Green ctermfg=Green
+hi verilogNumber guifg=Cyan ctermfg=Cyan
+hi verilogStatement guifg=Red ctermfg=DarkRed
+
+
