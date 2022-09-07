@@ -8,10 +8,13 @@ _vimrc:
  
  
  verilog.snippet:
+ 
   $HOME/.vim/snippet/verilog.snippet
   
   
-  $HOME:
-    on Windows: C:\\User\{USERNAME}
-    on Linux:   /home/{USERNAME} 
+ $HOME:
+    
+  on Windows: C:\\User\{USERNAME}
+    
+  on Linux:   /home/{USERNAME} 
  
